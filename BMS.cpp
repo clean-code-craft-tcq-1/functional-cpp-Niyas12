@@ -8,7 +8,7 @@ bool BMS::ValidateMax(float value, float max)
 {
     if (max != NO_LIMIT)
     {
-        return max > value;
+        return max >= value;
     }
     return true;
 }
@@ -16,7 +16,7 @@ bool BMS::ValidateMin(float value, float min)
 {
     if (min != NO_LIMIT)
     {
-        return min < value;
+        return min <= value;
     }
     return true;
 }
